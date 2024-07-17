@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cython'24</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        background-image:url("cyber.jpg"); /* Add your background image URL here */
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        width: 40%; /* Adjusted width */
+        margin: 80px auto;
+        font-family: Georgia, 'Times New Roman', Times, serif, serif;
+        padding: 80px;
+        background-color: rgba(5, 83, 138, 0.8); /* Semi-transparent background */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        color: #fff; /* White text color */
+    }
+    h2 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    input[type="text"], select {
+        padding: 8px; /* Reduced padding */
+        margin-bottom: 15px; /* Reduced margin */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        padding: 8px 15px; /* Smaller button size */
+        margin: 0 auto; /* Center button */
+        background-color: #3fc6d3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Enhanced shadow */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+    input[type="submit"]:hover {
+        background-color: rgba(1,51,100,255);
+        transform: translateY(-2px); /* Move button up slightly */
+        box-shadow: 0 4px 6px rgba(46, 174, 233, 0.3); /* Enhanced shadow on hover */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Options Form</h2>
+    <br>
+    <form id="extensionForm">
+        <label for="hyperlink">Enter your HyperLink:</label>
+        <input type="text" id="hyperlink" name="hyperlink" required>
+
+        <label for="replace">Enter the Replacement HyperLink:</label>
+        <input type="text" id="replace" name="replace" required>
+
+        <label for="ipAddress">Enter the server's IP address: </label>
+        <input type="text" id="ipAddress" name="ipAddress" required>
+    
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+<script src="options.js"></script>
+</body>
+
+</html>

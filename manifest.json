@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Reverse Overflow",
+  "version": "1.0",
+  "description": " Cython'24",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "cookies"
+  
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["hyperlink.js","options.js","cs.js"]
+    }
+  ]
+}
